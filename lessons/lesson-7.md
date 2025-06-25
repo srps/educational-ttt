@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Substitui o código que tinhas na tag `<script>` por este novo código. A mudança é pequena e está na função `checkResult`.
 
@@ -74,11 +74,11 @@ function checkResult() {
 
 ### Como Explicar às Crianças
 
-1.  **`if (!boardState.includes('')) { ... }`**
-    *   "Temos uma nova verificação, logo a seguir à de vitória. Esta é para o empate."
-    *   "`boardState.includes('')` pergunta ao computador: 'A tua lista de memória ainda inclui alguma casa vazia (`''`)?' Isto devolve `true` (verdadeiro) ou `false` (falso)."
-    *   "O ponto de exclamação `!` no início é um 'NÃO'. Ele inverte a resposta!"
-    *   "Então, estamos a perguntar: 'É verdade que a tua memória **NÃO** inclui nenhuma casa vazia?'"
-    *   "Se for verdade (ou seja, se todas as casas estiverem cheias) e se a verificação de vitória anterior não encontrou um vencedor, então só pode ser um empate! Mostramos a mensagem de empate e paramos a função com `return`."
+1. **`if (!boardState.includes('')) { ... }`**
+    * "Temos uma nova verificação, logo a seguir à de vitória. Esta é para o empate."
+    * "`boardState.includes('')` pergunta ao computador: 'A tua lista de memória ainda inclui alguma casa vazia (`''`)?' Isto devolve `true` (verdadeiro) ou `false` (falso)."
+    * "O ponto de exclamação `!` no início é um 'NÃO'. Ele inverte a resposta!"
+    * "Então, estamos a perguntar: 'É verdade que a tua memória **NÃO** inclui nenhuma casa vazia?'"
+    * "Se for verdade (ou seja, se todas as casas estiverem cheias) e se a verificação de vitória anterior não encontrou um vencedor, então só pode ser um empate! Mostramos a mensagem de empate e paramos a função com `return`."
 
 Agora o jogo está quase completo! Os alunos podem jogar até ganhar, perder ou empatar. Mas há um problema: o jogo não para quando acaba, e não conseguimos recomeçar. Vamos resolver isso nas próximas lições.

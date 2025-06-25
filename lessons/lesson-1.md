@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Copia e cola este código dentro da tag `<script>` no teu ficheiro `index.html`:
 
@@ -27,16 +27,16 @@ cells.forEach(cell => {
 
 ### Como Explicar às Crianças
 
-1.  **`const cells = document.querySelectorAll('.cell');`**
-    *   "Primeiro, temos de avisar o computador quais são as 'casinhas' do nosso jogo. Esta linha de código encontra todas as casinhas que desenhámos com a classe `cell` e guarda-as numa caixinha chamada `cells`."
+1. **`const cells = document.querySelectorAll('.cell');`**
+   * "Primeiro, temos de avisar o computador quais são as 'casinhas' do nosso jogo. Esta linha de código encontra todas as casinhas que desenhámos com a classe `cell` e guarda-as numa caixinha chamada `cells`."
 
-2.  **`cells.forEach(cell => { ... });`**
-    *   "Agora, vamos dizer a cada uma dessas casinhas o que fazer. O `forEach` é como se fôssemos a cada casinha, uma por uma, e déssemos uma instrução."
+2. **`cells.forEach(cell => { ... });`**
+   * "Agora, vamos dizer a cada uma dessas casinhas o que fazer. O `forEach` é como se fôssemos a cada casinha, uma por uma, e déssemos uma instrução."
 
-3.  **`cell.addEventListener('click', function() { ... });`**
-    *   "Aqui está a magia! `addEventListener` significa 'adicionar um ouvinte'. Estamos a dizer: 'Ó casinha, fica à escuta por um clique!'. E quando ouvires um clique, faz o que está dentro da `function` (função)."
+3. **`cell.addEventListener('click', function() { ... });`**
+   * "Aqui está a magia! `addEventListener` significa 'adicionar um ouvinte'. Estamos a dizer: 'Ó casinha, fica à escuta por um clique!'. E quando ouvires um clique, faz o que está dentro da `function` (função)."
 
-4.  **`console.log('Célula clicada!');`**
-    *   "Por enquanto, a única coisa que a função faz é escrever uma mensagem na 'consola' do navegador. A consola é uma área secreta dos programadores para ver mensagens do nosso código. Vamos ver como se abre!"
+4. **`console.log('Célula clicada!');`**
+   * "Por enquanto, a única coisa que a função faz é escrever uma mensagem na 'consola' do navegador. A consola é uma área secreta dos programadores para ver mensagens do nosso código. Vamos ver como se abre!"
 
 Depois de adicionar o código, mostra aos alunos como abrir a consola de programador do navegador (geralmente com a tecla F12) para que eles possam ver a mensagem "Célula clicada!" aparecer a cada clique.

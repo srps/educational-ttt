@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Substitui o código que tinhas na tag `<script>` por este novo código:
 
@@ -54,20 +54,20 @@ cells.forEach(cell => {
 
 ### Como Explicar às Crianças
 
-1.  **`let boardState = ['', '', ...];`**
-    *   "O nosso computador tem uma memória fraca. Ele só vê o que está no ecrã. Para ele poder tomar decisões (como saber quem ganhou), ele precisa de uma memória interna. Vamos criar uma para ele!"
-    *   "Isto é um **array**. Podes pensar nele como uma lista ou um bloco de notas com 9 linhas. Cada linha representa uma casa do nosso tabuleiro. Começamos com todas as linhas em branco (`''`)."
+1. **`let boardState = ['', '', ...];`**
+    * "O nosso computador tem uma memória fraca. Ele só vê o que está no ecrã. Para ele poder tomar decisões (como saber quem ganhou), ele precisa de uma memória interna. Vamos criar uma para ele!"
+    * "Isto é um **array**. Podes pensar nele como uma lista ou um bloco de notas com 9 linhas. Cada linha representa uma casa do nosso tabuleiro. Começamos com todas as linhas em branco (`''`)."
 
-2.  **`const clickedCellIndex = parseInt(clickedCell.getAttribute('data-index'));`**
-    *   "No nosso HTML, cada casa tem um número de `data-index` (de 0 a 8). Com esta linha, estamos a perguntar: 'Qual é o número de índice desta casa que foi clicada?' e a guardá-lo."
-    *   "`parseInt` apenas garante que o número que recebemos é mesmo um número e não texto."
+2. **`const clickedCellIndex = parseInt(clickedCell.getAttribute('data-index'));`**
+    * "No nosso HTML, cada casa tem um número de `data-index` (de 0 a 8). Com esta linha, estamos a perguntar: 'Qual é o número de índice desta casa que foi clicada?' e a guardá-lo."
+    * "`parseInt` apenas garante que o número que recebemos é mesmo um número e não texto."
 
-3.  **`if (boardState[clickedCellIndex] === '')`**
-    *   "A nossa verificação mudou! Agora é mais inteligente. Em vez de olharmos para o que está escrito na casa, estamos a olhar para a nossa memória!"
-    *   "Estamos a dizer: 'Vai à nossa lista `boardState`, na posição `clickedCellIndex`, e vê se está vazia (`''`).' Se estiver, então podemos jogar."
+3. **`if (boardState[clickedCellIndex] === '')`**
+    * "A nossa verificação mudou! Agora é mais inteligente. Em vez de olharmos para o que está escrito na casa, estamos a olhar para a nossa memória!"
+    * "Estamos a dizer: 'Vai à nossa lista `boardState`, na posição `clickedCellIndex`, e vê se está vazia (`''`).' Se estiver, então podemos jogar."
 
-4.  **`boardState[clickedCellIndex] = currentPlayer;`**
-    *   "Esta é a parte mais importante! Agora, quando um jogador joga, nós primeiro **atualizamos a nossa memória**. Estamos a dizer: 'Na posição desta casa, escreve o símbolo do jogador atual (`X` ou `O`)'."
+4. **`boardState[clickedCellIndex] = currentPlayer;`**
+    * "Esta é a parte mais importante! Agora, quando um jogador joga, nós primeiro **atualizamos a nossa memória**. Estamos a dizer: 'Na posição desta casa, escreve o símbolo do jogador atual (`X` ou `O`)'."
 
 Agora o nosso jogo tem um "cérebro"! Ele não parece diferente para o jogador, mas esta memória interna é o que nos vai permitir, na próxima lição, verificar se alguém ganhou o jogo.
 

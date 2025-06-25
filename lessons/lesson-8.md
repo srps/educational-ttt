@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Substitui o código que tinhas na tag `<script>` por este novo código. As novidades são a variável `gameActive` e as verificações que a usam.
 
@@ -83,17 +83,17 @@ function checkResult() {
 
 ### Como Explicar às Crianças
 
-1.  **`let gameActive = true;`**
-    *   "Vamos criar um interruptor para o nosso jogo. Esta variável, `gameActive`, vai guardar `true` (verdadeiro) quando o jogo está a decorrer e `false` (falso) quando o jogo acaba."
-    *   "Começamos com o interruptor ligado: `true`."
+1. **`let gameActive = true;`**
+    * "Vamos criar um interruptor para o nosso jogo. Esta variável, `gameActive`, vai guardar `true` (verdadeiro) quando o jogo está a decorrer e `false` (falso) quando o jogo acaba."
+    * "Começamos com o interruptor ligado: `true`."
 
-2.  **`if (boardState[clickedCellIndex] !== '' || !gameActive)`**
-    *   "A nossa primeira verificação ficou mais poderosa. As duas barras `||` significam **OU**."
-    *   "Agora lemos assim: 'Se a casa clicada **NÃO** está vazia **OU** se o jogo **NÃO** está ativo, então para tudo (`return`).'"
-    *   "Isto impede que se jogue numa casa ocupada e também impede qualquer jogada se o jogo já tiver acabado."
+2. **`if (boardState[clickedCellIndex] !== '' || !gameActive)`**
+    * "A nossa primeira verificação ficou mais poderosa. As duas barras `||` significam **OU**."
+    * "Agora lemos assim: 'Se a casa clicada **NÃO** está vazia **OU** se o jogo **NÃO** está ativo, então para tudo (`return`).'"
+    * "Isto impede que se jogue numa casa ocupada e também impede qualquer jogada se o jogo já tiver acabado."
 
-3.  **`gameActive = false;`**
-    *   "Olha o que acontece quando alguém ganha ou quando há um empate! A primeira coisa que fazemos, logo a seguir a mostrar a mensagem, é desligar o nosso interruptor."
-    *   "Ao definirmos `gameActive = false`, a verificação que vimos no ponto 2 vai impedir qualquer clique futuro de fazer efeito."
+3. **`gameActive = false;`**
+    * "Olha o que acontece quando alguém ganha ou quando há um empate! A primeira coisa que fazemos, logo a seguir a mostrar a mensagem, é desligar o nosso interruptor."
+    * "Ao definirmos `gameActive = false`, a verificação que vimos no ponto 2 vai impedir qualquer clique futuro de fazer efeito."
 
 O jogo agora funciona na perfeição! Só falta uma coisa: o botão para recomeçar. Vamos fazer isso na nossa última lição.

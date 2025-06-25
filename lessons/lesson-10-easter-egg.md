@@ -1,10 +1,10 @@
-# Lição Bónus 10: O Easter Egg do Arco-Íris!
+# Lição Bónus 10: O Easter Egg do Arco-Íris
 
 **Objetivo:** Adicionar uma surpresa escondida (um *Easter Egg*) no nosso jogo. Quando os jogadores clicarem no título, vamos ativar um "Modo Arco-Íris" onde cada jogada tem uma cor diferente!
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Este código é um pouco diferente. Em vez de substituirmos tudo, vamos **adicionar** código novo ao que já temos da Lição 9. Terás de encontrar os sítios certos para adicionar cada parte.
 
@@ -90,19 +90,19 @@ title.addEventListener('click', activateRainbowMode); // Ouvinte para o Easter E
 
 ### Como Explicar às Crianças
 
-1.  **`rainbowMode = false;`**
-    *   "Vamos criar um novo interruptor, tal como o `gameActive`. Este, chamado `rainbowMode`, controla se o nosso modo secreto está ligado ou desligado. Começa desligado (`false`)."
+1. **`rainbowMode = false;`**
+    * "Vamos criar um novo interruptor, tal como o `gameActive`. Este, chamado `rainbowMode`, controla se o nosso modo secreto está ligado ou desligado. Começa desligado (`false`)."
 
-2.  **`title.addEventListener(...)`**
-    *   "Agora vamos fazer uma coisa nova: vamos pôr o título do jogo à escuta por cliques! Quando alguém clicar no título, ele vai chamar a nossa nova função `activateRainbowMode`."
+2. **`title.addEventListener(...)`**
+    * "Agora vamos fazer uma coisa nova: vamos pôr o título do jogo à escuta por cliques! Quando alguém clicar no título, ele vai chamar a nossa nova função `activateRainbowMode`."
 
-3.  **`function activateRainbowMode()`**
-    *   "Esta função é a que liga e desliga o modo arco-íris. Ela usa um `if/else` para verificar se o modo está a ser ligado ou desligado e muda a aparência do título para nos mostrar em que modo estamos."
+3. **`function activateRainbowMode()`**
+    * "Esta função é a que liga e desliga o modo arco-íris. Ela usa um `if/else` para verificar se o modo está a ser ligado ou desligado e muda a aparência do título para nos mostrar em que modo estamos."
 
-4.  **`function getRandomColor()`**
-    *   "Esta é a função mais divertida! Ela constrói uma cor aleatória. `Math.random()` pede ao computador um número aleatório, e nós usamos isso para escolher 6 letras e números da lista `letters` para formar um código de cor como `#RRGGBB`."
+4. **`function getRandomColor()`**
+    * "Esta é a função mais divertida! Ela constrói uma cor aleatória. `Math.random()` pede ao computador um número aleatório, e nós usamos isso para escolher 6 letras e números da lista `letters` para formar um código de cor como `#RRGGBB`."
 
-5.  **`if (rainbowMode) { ... }`**
-    *   "Dentro da função `handleCellClick`, onde pomos o 'X' ou 'O', adicionamos uma verificação: **Se** o `rainbowMode` estiver ativo, então chama a função `getRandomColor` e muda a cor da letra (`style.color`) da célula que acabámos de clicar."
+5. **`if (rainbowMode) { ... }`**
+    * "Dentro da função `handleCellClick`, onde pomos o 'X' ou 'O', adicionamos uma verificação: **Se** o `rainbowMode` estiver ativo, então chama a função `getRandomColor` e muda a cor da letra (`style.color`) da célula que acabámos de clicar."
 
 Agora, quando os alunos clicarem no título, vão ativar o modo secreto e cada jogada será uma explosão de cores! Clicar novamente no título desativa o modo. É uma surpresa divertida que lhes ensina conceitos novos e poderosos.

@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Esta é a versão final! Substitui todo o código na tag `<script>` por este.
 
@@ -103,18 +103,18 @@ resetButton.addEventListener('click', resetGame);
 
 ### Como Explicar às Crianças
 
-1.  **Código Reorganizado**
-    *   "Reparem que eu organizei o código. Movi as funções `handleCellClick` e `checkResult` para cima. Agora temos uma secção só para as nossas 'receitas' (funções) e outra em baixo só para ligar os botões."
+1. **Código Reorganizado**
+    * "Reparem que eu organizei o código. Movi as funções `handleCellClick` e `checkResult` para cima. Agora temos uma secção só para as nossas 'receitas' (funções) e outra em baixo só para ligar os botões."
 
-2.  **`const resetButton = ...`**
-    *   "Tal como fizemos para as células e para a mensagem, primeiro temos de dizer ao computador onde está o botão de recomeçar."
+2. **`const resetButton = ...`**
+    * "Tal como fizemos para as células e para a mensagem, primeiro temos de dizer ao computador onde está o botão de recomeçar."
 
-3.  **`function resetGame() { ... }`**
-    *   "Criámos uma nova receita, `resetGame`. O trabalho dela é pôr tudo como estava no início."
-    *   "Dentro dela, pegamos na nossa memória `boardState` e limpamo-la. Ligamos o interruptor `gameActive` outra vez. Dizemos que o `currentPlayer` é o 'X' de novo."
-    *   "Também mudamos a mensagem de volta para a original e, finalmente, usamos o `forEach` para ir a cada célula e limpar o que lá estava escrito."
+3. **`function resetGame() { ... }`**
+    * "Criámos uma nova receita, `resetGame`. O trabalho dela é pôr tudo como estava no início."
+    * "Dentro dela, pegamos na nossa memória `boardState` e limpamo-la. Ligamos o interruptor `gameActive` outra vez. Dizemos que o `currentPlayer` é o 'X' de novo."
+    * "Também mudamos a mensagem de volta para a original e, finalmente, usamos o `forEach` para ir a cada célula e limpar o que lá estava escrito."
 
-4.  **`resetButton.addEventListener('click', resetGame);`**
-    *   "Esta é a linha final! Estamos a dizer: 'Ó botão de recomeçar, fica à escuta por um clique. Quando fores clicado, executa a receita `resetGame`.'"
+4. **`resetButton.addEventListener('click', resetGame);`**
+    * "Esta é a linha final! Estamos a dizer: 'Ó botão de recomeçar, fica à escuta por um clique. Quando fores clicado, executa a receita `resetGame`.'"
 
 E pronto! O jogo está completo. Os alunos podem jogar, ver quem ganha, empatar e recomeçar o jogo as vezes que quiserem. Parabéns, acabaram de criar um jogo completo a partir do zero!

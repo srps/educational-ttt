@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Substitui o código que tinhas na tag `<script>` por este novo código. Ele tem bastantes novidades!
 
@@ -84,23 +84,23 @@ function checkResult() {
 
 ### Como Explicar às Crianças
 
-1.  **`const winningConditions = [ ... ];`**
-    *   "Como é que nós sabemos que alguém ganhou? Porque fez 3 em linha, certo? O computador não sabe o que é uma linha. Então, temos de lhe ensinar!"
-    *   "Esta é uma lista de listas! Cada lista pequena `[0, 1, 2]` é uma combinação de 3 casas que dá a vitória. Escrevemos todas as 8 maneiras de ganhar."
+1. **`const winningConditions = [ ... ];`**
+    * "Como é que nós sabemos que alguém ganhou? Porque fez 3 em linha, certo? O computador não sabe o que é uma linha. Então, temos de lhe ensinar!"
+    * "Esta é uma lista de listas! Cada lista pequena `[0, 1, 2]` é uma combinação de 3 casas que dá a vitória. Escrevemos todas as 8 maneiras de ganhar."
 
-2.  **`function checkResult() { ... }`**
-    *   "Para manter o nosso código organizado, criámos uma **função**. Pensa numa função como uma receita. Esta receita chama-se `checkResult` e serve para verificar quem ganhou. Chamamos a receita (`checkResult();`) depois de cada jogada."
+2. **`function checkResult() { ... }`**
+    * "Para manter o nosso código organizado, criámos uma **função**. Pensa numa função como uma receita. Esta receita chama-se `checkResult` e serve para verificar quem ganhou. Chamamos a receita (`checkResult();`) depois de cada jogada."
 
-3.  **`for (let i = 0; i < winningConditions.length; i++) { ... }`**
-    *   "Isto é um **ciclo `for`**. É uma forma de dizer ao computador para repetir uma tarefa várias vezes. Estamos a dizer: 'Verifica cada uma das 8 condições de vitória, uma de cada vez'."
+3. **`for (let i = 0; i < winningConditions.length; i++) { ... }`**
+    * "Isto é um **ciclo `for`**. É uma forma de dizer ao computador para repetir uma tarefa várias vezes. Estamos a dizer: 'Verifica cada uma das 8 condições de vitória, uma de cada vez'."
 
-4.  **`let a = boardState[...]`**
-    *   "Dentro do ciclo, para cada condição de vitória (ex: `[0, 1, 2]`), vamos buscar o que está na nossa memória (`boardState`) para cada uma das três casas. Guardamos em `a`, `b`, e `c` para ser mais fácil de ler."
+4. **`let a = boardState[...]`**
+    * "Dentro do ciclo, para cada condição de vitória (ex: `[0, 1, 2]`), vamos buscar o que está na nossa memória (`boardState`) para cada uma das três casas. Guardamos em `a`, `b`, e `c` para ser mais fácil de ler."
 
-5.  **`if (a === b && b === c) { ... }`**
-    *   "Esta é a verificação mágica! Estamos a perguntar: 'O conteúdo da casa `a` é igual ao da `b` E o da `b` é igual ao da `c`?' Se for verdade, e se não estiverem vazias, encontrámos um vencedor!"
+5. **`if (a === b && b === c) { ... }`**
+    * "Esta é a verificação mágica! Estamos a perguntar: 'O conteúdo da casa `a` é igual ao da `b` E o da `b` é igual ao da `c`?' Se for verdade, e se não estiverem vazias, encontrámos um vencedor!"
 
-6.  **`if (roundWon) { ... }`**
-    *   "No final, se a nossa variável `roundWon` for verdadeira, mostramos a mensagem de vitória! Senão, passamos a vez ao outro jogador como fazíamos antes."
+6. **`if (roundWon) { ... }`**
+    * "No final, se a nossa variável `roundWon` for verdadeira, mostramos a mensagem de vitória! Senão, passamos a vez ao outro jogador como fazíamos antes."
 
 Agora o jogo já tem um vencedor! Peça aos alunos para tentarem ganhar. O que falta? Tratar dos empates e recomeçar o jogo.

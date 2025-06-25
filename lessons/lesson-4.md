@@ -4,7 +4,7 @@
 
 ---
 
-### Código a Adicionar
+## Código a Adicionar
 
 Substitui o código que tinhas na tag `<script>` por este novo código:
 
@@ -44,10 +44,10 @@ cells.forEach(cell => {
 
 ### Como Explicar às Crianças
 
-1.  **`if (clickedCell.textContent === '') { ... }`**
-    *   "Agora temos uma nova verificação! Antes de fazermos qualquer coisa, usamos um `if` para perguntar: 'O texto dentro da casinha clicada (`clickedCell.textContent`) é igual a nada (`''`)?'"
-    *   "As aspas simples `''` sem nada dentro representam um texto vazio. Por isso, estamos a verificar se a casa está vazia."
-    *   "Todo o nosso código antigo que desenha o 'X' ou 'O' e troca o jogador foi movido para *dentro* desta condição `if`."
-    *   "Isto significa que o código só vai ser executado **se** a casa estiver vazia. Se já tiver alguma coisa, o programa salta o bloco de código do `if` e não faz absolutamente nada. É como se o clique não tivesse acontecido."
+1. **`if (clickedCell.textContent === '') { ... }`**
+    * "Agora temos uma nova verificação! Antes de fazermos qualquer coisa, usamos um `if` para perguntar: 'O texto dentro da casinha clicada (`clickedCell.textContent`) é igual a nada (`''`)?'"
+    * "As aspas simples `''` sem nada dentro representam um texto vazio. Por isso, estamos a verificar se a casa está vazia."
+    * "Todo o nosso código antigo que desenha o 'X' ou 'O' e troca o jogador foi movido para *dentro* desta condição `if`."
+    * "Isto significa que o código só vai ser executado **se** a casa estiver vazia. Se já tiver alguma coisa, o programa salta o bloco de código do `if` e não faz absolutamente nada. É como se o clique não tivesse acontecido."
 
 Depois de atualizar o código, os alunos vão notar que já não conseguem clicar numa casa que já tem um 'X' ou um 'O'. O jogo está a ficar mais inteligente! A seguir, vamos dar uma memória ao nosso computador.

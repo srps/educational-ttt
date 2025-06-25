@@ -4,7 +4,7 @@
 
 ---
 
-### O Desafio
+## O Desafio
 
 Abram o ficheiro `index-bug.html` no navegador. Joguem o jogo. Tentem ganhar com o jogador 'X'. O que é que acontece? E se o jogador 'O' ganhar?
 
@@ -14,11 +14,11 @@ Abram o ficheiro `index-bug.html` no navegador. Joguem o jogo. Tentem ganhar com
 
 ### Pistas para Encontrar o Bug
 
-1.  **Onde é que o problema acontece?** O problema está na mensagem de vitória. Por isso, o nosso bug deve estar na parte do código que mostra essa mensagem.
+1. **Onde é que o problema acontece?** O problema está na mensagem de vitória. Por isso, o nosso bug deve estar na parte do código que mostra essa mensagem.
 
-2.  **Qual a função responsável?** A nossa função `checkResult` é a que verifica se alguém ganhou e mostra a mensagem. O erro tem de estar lá dentro.
+2. **Qual a função responsável?** A nossa função `checkResult` é a que verifica se alguém ganhou e mostra a mensagem. O erro tem de estar lá dentro.
 
-3.  **Vamos ler o código com atenção.** Procurem dentro da `checkResult` pela linha que escreve a mensagem de vitória. A linha é esta:
+3. **Vamos ler o código com atenção.** Procurem dentro da `checkResult` pela linha que escreve a mensagem de vitória. A linha é esta:
 
     ```javascript
     if (roundWon) {
@@ -36,11 +36,13 @@ Conseguem ver o problema? A mensagem está "escrita em pedra" para dizer sempre 
 Para corrigir o bug, temos de mudar aquela linha para que ela use a variável, tal como fazíamos antes. A correção é esta:
 
 **Código com Bug:**
+
 ```javascript
 message.textContent = `O jogador O venceu!`;
 ```
 
 **Código Corrigido:**
+
 ```javascript
 message.textContent = `O jogador ${currentPlayer} venceu!`;
 ```
