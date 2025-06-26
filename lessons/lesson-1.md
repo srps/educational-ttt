@@ -18,7 +18,7 @@ const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
     cell.addEventListener('click', function() {
         // Quando uma célula for clicada, vamos mostrar uma mensagem na consola.
-        console.log('Célula clicada!');
+        console.log(`Célula ${cell.getAttribute('data-index')} clicada!`);
     });
 });
 ```
