@@ -4,9 +4,10 @@
 
 ---
 
+
 ## Código a Adicionar
 
-Copia e cola este código dentro da tag `<script>` no teu ficheiro `index.html`:
+Abre o ficheiro `lesson.js` e substitui o seu conteúdo por este código:
 
 ```javascript
 // Passo 1: Fazer o tabuleiro responder aos cliques
@@ -22,6 +23,8 @@ cells.forEach(cell => {
     });
 });
 ```
+
+Guarda o ficheiro. Depois, abre o `index.html` no navegador e vê o que acontece quando clicas nas casas do tabuleiro!
 
 ---
 
@@ -39,4 +42,4 @@ cells.forEach(cell => {
 4. **`console.log('Célula clicada!');`**
    * "Por enquanto, a única coisa que a função faz é escrever uma mensagem na 'consola' do navegador. A consola é uma área secreta dos programadores para ver mensagens do nosso código. Vamos ver como se abre!"
 
-Depois de adicionar o código, mostra aos alunos como abrir a consola de programador do navegador (geralmente com a tecla F12) para que eles possam ver a mensagem "Célula clicada!" aparecer a cada clique.
+Depois de adicionares o código ao `lesson.js`, mostra aos alunos como abrir a consola de programador do navegador (geralmente com a tecla F12) para que eles possam ver a mensagem "Célula clicada!" aparecer a cada clique.

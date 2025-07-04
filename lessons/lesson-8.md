@@ -6,7 +6,8 @@
 
 ## Código a Adicionar
 
-Substitui o código que tinhas na tag `<script>` por este novo código. As novidades são a variável `gameActive` e as verificações que a usam.
+
+Abre o ficheiro `lesson.js` e substitui o seu conteúdo por este código. As novidades são a variável `gameActive` e as verificações que a usam.
 
 ```javascript
 // Passo 8: Terminar o jogo quando houver um vencedor ou empate

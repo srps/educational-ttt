@@ -6,7 +6,8 @@
 
 ## Código a Adicionar
 
-Substitui o código que tinhas na tag `<script>` por este novo código. Ele tem bastantes novidades!
+
+Abre o ficheiro `lesson.js` e substitui o seu conteúdo por este código. Ele tem bastantes novidades!
 
 ```javascript
 // Passo 6: Verificar se alguém ganhou

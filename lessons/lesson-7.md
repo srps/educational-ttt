@@ -6,7 +6,8 @@
 
 ## Código a Adicionar
 
-Substitui o código que tinhas na tag `<script>` por este novo código. A mudança é pequena e está na função `checkResult`.
+
+Abre o ficheiro `lesson.js` e substitui o seu conteúdo por este código. A mudança é pequena e está na função `checkResult`.
 
 ```javascript
 // Passo 7: Verificar se há empate

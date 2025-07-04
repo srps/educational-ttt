@@ -6,7 +6,7 @@
 
 ## Código a Adicionar
 
-Esta é a versão final! Substitui todo o código na tag `<script>` por este.
+Esta é a versão final! Abre o ficheiro `lesson.js` e substitui todo o seu conteúdo por este código.
 
 ```javascript
 // Passo 9: Fazer o botão de recomeçar funcionar!
